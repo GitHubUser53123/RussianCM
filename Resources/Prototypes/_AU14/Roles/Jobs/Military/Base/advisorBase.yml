@@ -14,6 +14,7 @@
   canBeAntag: false
   accessGroups:
   - AU14GovforCommand
+  - aulegacygroupcommand
 
 - type: job
   abstract: true
@@ -29,15 +30,23 @@
     traits:
     - Epilepsy
   ranks:
+    RMCRankCivilian: []
+  chevrons:
     RMCRankSergeantMajor:
-    - !type:RoleTimeRequirement
-      role: AU14JobGOVFORadvisor
-      time: 360000 # 100 hours
+      entity: AU14ChevronUSCMSergeantMajor
+      requirements:
+      - !type:RoleTimeRequirement
+        role: AU14JobGOVFORadvisor
+        time: 360000
     RMCRankMasterGunnerySergeant:
-    - !type:RoleTimeRequirement
-      role: AU14JobGOVFORadvisor
-      time: 86400 # 24 hours
-    RMCRankFirstSergeant: []
+      entity: AU14ChevronUSCMMasterGunnerySergeant
+      requirements:
+      - !type:RoleTimeRequirement
+        role: AU14JobGOVFORadvisor
+        time: 86400
+    RMCRankFirstSergeant:
+      entity: AU14ChevronUSCMFirstSergeant
+      requirements: []
   special:
   - !type:AddComponentSpecial
     components:
@@ -50,7 +59,7 @@
       prefix: au14-job-prefix-govforadvisor
     - type: TacticalMapIcon
       icon:
-        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        sprite: /Textures/_AU14/Interface/au14govforjobicons.rsi
         state: govfor_advisor
 
 - type: playTimeTracker
@@ -62,9 +71,8 @@
   equipment:
     id: AU14IDCardSquadAdvisor
     ears: AU14HeadsetGovforCommand
-    back: AU14SatchelMarineAdvisorMilitary
-  inhand:
-    -  AU14StampSEA
+    back: AU14SatchelMarineAdvisorMilitary # removed by ImaginaryFriend
+    pocket1: AU14StampSEA # removed by ImaginaryFriend
 
 - type: startingGear
   id: AU14GearGOVFORadvisorDummy

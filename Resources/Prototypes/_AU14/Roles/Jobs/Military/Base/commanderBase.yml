@@ -17,6 +17,7 @@
   canBeAntag: false
   accessGroups:
   - AU14GovforCommand
+  - aulegacygroupcommand # NOTE: should remove & hard migrate
 
 - type: job
   abstract: true
@@ -36,11 +37,17 @@
     - NonResuscitable
     - Epilepsy
   ranks:
+    RMCRankCivilian: []
+  chevrons:
     RMCRankMajor:
-    - !type:RoleTimeRequirement
-      role: AU14JobGOVFORPlatCo
-      time: 180000 # 50 hours
-    RMCRankCaptain: []
+      entity: AU14ChevronMajor
+      requirements:
+      - !type:RoleTimeRequirement
+        role: AU14JobGOVFORPlatCo
+        time: 180000 # 50 hours
+    RMCRankCaptain:
+      entity: AU14ChevronCaptain
+      requirements: []
   special:
   - !type:AddComponentSpecial
     components:
@@ -54,7 +61,7 @@
       speechStyleClass: commanderSpeech
     - type: TacticalMapIcon
       icon:
-        sprite: /Textures/_AU14/Interface/au14govforhud.rsi
+        sprite: /Textures/_AU14/Interface/au14govforjobicons.rsi # au14govforjobicons.rsi
         state: govfor_platco
 
 - type: playTimeTracker
@@ -66,9 +73,9 @@
   equipment:
     id: AU14IDCardGOVFORPlatCo
     ears: AU14HeadsetGovforCommand
+    pocket1: AU14StampCO
   inhand:
     -  AU14TabletGovfor
-    -  AU14StampCO
 
 - type: startingGear
   id: AU14GearGOVFORPlatCoDummy
