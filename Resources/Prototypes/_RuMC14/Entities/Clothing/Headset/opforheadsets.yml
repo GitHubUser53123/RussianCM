@@ -1,8 +1,8 @@
 - type: entity
   parent: AU14EncryptionKeyGovfor
   id: RUCMEncryptionKeyOpforMedical
-  name: ОПФОР медицинский ключ шифрования 
-  description: Ключ шифрования используемый для коммуникации на медицинских каналах ОПФОР.
+  name: OPFOR medical radio headset
+  description: An encryption key used to communicate on the OPFOR Medical channel.
   components:
   - type: EncryptionKey
     channels:
@@ -12,8 +12,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: RUCMHeadsetOpforMarineMedical
-  name: ОПФОР медицинская радиогарнитура
-  description:  Используется санитарами ОПФОР для коммуникации по радио.
+  name: OPFOR medical radio headset
+  description: This is used by OPFOR corpsmen to communicate on the radio.
   components:
   - type: ContainerFill
     containers:
