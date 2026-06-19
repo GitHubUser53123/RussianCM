@@ -1,0 +1,22 @@
+- type: entity
+  parent: AU14EncryptionKeyGovfor
+  id: RUCMEncryptionKeyGovforMedical
+  name: ГОВФОР медицинский ключ шифрования 
+  description: Ключ шифрования используемый для коммуникации на медицинских каналах ГОВФОР.
+  components:
+  - type: EncryptionKey
+    channels:
+    - radioGovforMedical
+    defaultChannel: radioGovforMedical
+
+- type: entity
+  parent: AU14HeadsetGovforMarine
+  id: RUCMHeadsetGovforMarineMedical
+  name: ГОВФОР медицинская радиогарнитура
+  description:  Используется санитарами ГОВФОР для коммуникации по радио.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - AU14EncryptionKeyGovfor
+      - RUCMEncryptionKeyGovforMedical

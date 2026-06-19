@@ -1,0 +1,22 @@
+- type: entity
+  parent: AU14EncryptionKeyGovfor
+  id: RUCMEncryptionKeyOpforMedical
+  name: ОПФОР медицинский ключ шифрования 
+  description: Ключ шифрования используемый для коммуникации на медицинских каналах ОПФОР.
+  components:
+  - type: EncryptionKey
+    channels:
+    - radioOpforMedical
+    defaultChannel: radioOpforMedical
+
+- type: entity
+  parent: AU14HeadsetGovforMarine
+  id: RUCMHeadsetOpforMarineMedical
+  name: ОПФОР медицинская радиогарнитура
+  description:  Используется санитарами ОПФОР для коммуникации по радио.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - AU14EncryptionKeyOpfor
+      - RUCMEncryptionKeyOpforMedical

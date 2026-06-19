@@ -51,7 +51,7 @@
   id: AU14GearGOVFORPlatoonCorpsman
   equipment:
     id: AU14JobIDCardGOVFORPlatoonCorpsman
-    ears: AU14HeadsetGovforMarine
+    ears: RUCMEncryptionKeyGovforMedical # RUCM
 
 - type: startingGear
   id: AU14GearGOVFORCorpsmanDummy
@@ -61,7 +61,7 @@
     shoes: CMBootsBlack
     head: AU14JungleM10CorpsmanHelmet
     jumpsuit: AU14JungleFatigues
-    ears: AU14HeadsetGovforMarine
+    ears: RUCMHeadsetGovforMarineMedical # RUCM
 
 - type: entity
   parent: CMSpawnPointJobBase

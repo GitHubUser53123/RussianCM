@@ -42,6 +42,7 @@
     - radioGovforIntel
     - radioGovforJTAC
     - radioGovforMILP
+    - radioGovforMedical # RUCM
     defaultChannel: radioGovforCommand
 
 - type: entity
@@ -162,6 +163,7 @@
       - AU14EncryptionKeyGovfor
       - AU14EncryptionKeyGovforCommandOnly
       - AU14EncryptionKeyGovforIntel
+      - RUCMEncryptionKeyGovforMedical # RUCM
 
 - type: entity
   parent: AU14HeadsetGovforMarine

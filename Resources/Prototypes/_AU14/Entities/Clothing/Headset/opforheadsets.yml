@@ -42,6 +42,7 @@
     - radioOpforIntel
     - radioOpforJTAC
     - radioOpforMILP
+    - radioOpforMedical # RUCM
     defaultChannel: radioOpforCommand
 
 - type: entity
@@ -161,6 +162,7 @@
       - AU14EncryptionKeyOpfor
       - AU14EncryptionKeyOpforCommandOnly
       - AU14EncryptionKeyOpforIntel
+      - RUCMEncryptionKeyOpforMedical # RUCM
 
 - type: entity
   parent: AU14HeadsetOpforMarine
