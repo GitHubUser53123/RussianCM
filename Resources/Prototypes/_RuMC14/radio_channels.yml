@@ -2,7 +2,7 @@
   id: radioGovforMedical
   name: chat-radio-govformed
   keycode: "ь"
-  frequency: 2595
+  frequency: 4654
   color: "#009771"
   longRange: true
   tower: true
@@ -12,7 +12,7 @@
   id: radioOpforMedical
   name: chat-radio-opformed
   keycode: "ю"
-  frequency: 1601
+  frequency: 6565
   color: "#009771"
   longRange: true
   tower: true
