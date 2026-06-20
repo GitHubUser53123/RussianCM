@@ -165,7 +165,7 @@
       - AU14EncryptionKeyOpfor
       - AU14EncryptionKeyOpforCommandOnly
       - AU14EncryptionKeyOpforIntel
-      - RUCMEncryptionKeyOpforMedical # RUCM
+      - RUMCEncryptionKeyOpforMedical # RUMC
   - type: RMCStaticDefaultChannel
   - type: EncryptionKeyHolder
     defaultChannel: radioOpforCommand
