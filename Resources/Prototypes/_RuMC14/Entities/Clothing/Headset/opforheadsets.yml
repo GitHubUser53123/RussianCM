@@ -19,4 +19,4 @@
     containers:
       key_slots:
       - AU14EncryptionKeyOpfor
-      - RUCMEncryptionKeyOpforMedical
+      - RUMCEncryptionKeyOpforMedical
