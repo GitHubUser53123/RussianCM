@@ -29,7 +29,7 @@
   id: AU14GearopforPlatoonCorpsman
   equipment:
     id: AU14JobIDCardopforPlatoonCorpsman
-    ears: RUCMHeadsetOpforMarineMedical # RUCM
+    ears: RUMCHeadsetOpforMarineMedical # RUMC
 
 - type: entity
   parent: CMSpawnPointJobBase
@@ -49,4 +49,4 @@
     shoes: CMBootsBlack
     head: AU14JungleM10CorpsmanHelmet
     jumpsuit: AU14JungleFatigues
-    ears: RUCMHeadsetOpforMarineMedical # RUCM
+    ears: RUMCHeadsetOpforMarineMedical # RUMC
