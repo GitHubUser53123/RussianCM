@@ -1,6 +1,6 @@
 - type: entity
   parent: AU14EncryptionKeyOpfor
-  id: RUMCncryptionKeyOpforMedical
+  id: RUMCEncryptionKeyOpforMedical
   name: OPFOR medical encryption key
   description: An encryption key used to communicate on the OPFOR Medical channel.
   components:
